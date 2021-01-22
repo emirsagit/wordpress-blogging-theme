@@ -15,10 +15,10 @@ $header_menus = wp_get_nav_menu_items($header_menu_id);
 	<div class="container pt-3 text-white d-flex align-items-center flex-column">
 				<?php
 				if (is_front_page()) {
-					echo '<h1 class="nav-title">' . get_bloginfo('name') . '</h1>';
+					echo '<h1 class="nav-title"><a href="' . esc_url( home_url( '/' ) ) . '" class="text-white decoration-none">' . get_bloginfo('name') . '</a></h1>';
 					echo '<span class="nav-element">' . get_bloginfo('description') . '</span>';
 				} else {
-					echo '<h2 class="nav-title">' . get_bloginfo('name') . '</h2>';
+					echo '<h2 class="nav-title"><a href="' . esc_url( home_url( '/' ) ) . '" class="text-white decoration-none">' . get_bloginfo('name') . '</a></h2>';
 					echo '<span class="nav-element">' . get_bloginfo('description') . '</span>';
 				}		
 				?>

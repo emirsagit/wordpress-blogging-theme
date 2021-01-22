@@ -10,7 +10,7 @@ get_header();
 
 ?>
 
-	<div id="primary">
+	<div id="primary" class="min-h-100" style="min-height: 100vh;">
 		<main id="main" class="site-main mt-5" role="main">
 			<?php
 			if ( have_posts() ) :

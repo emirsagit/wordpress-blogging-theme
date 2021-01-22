@@ -4,5 +4,5 @@
         aquila_the_excerpt(250);
         ?>
     </p>
-    <a class="btn btn-sm btn-primary text-sm" href="<?= esc_url(get_the_permalink());?>">Devamı</a>
+    <a class="btn btn-sm btn-primary text-sm mb-3" href="<?= esc_url(get_the_permalink());?>">Devamı</a>
 </div>
