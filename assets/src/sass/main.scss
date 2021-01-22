@@ -1,0 +1,21 @@
+// Essentials.
+@import "../bootstrap/bootstrap";
+/* purgecss start ignore */
+@import "essentials";
+
+// Generic
+@import "2-generic/generic";
+@import "2-generic/gutenberg";
+@import "2-generic/slick-carousel";
+
+// Layouts.
+@import "4-layouts/posts/meta";
+@import "4-layouts/posts/pagination";
+@import "4-layouts/sidebar/sidebar";
+@import "4-layouts/general";
+@import "4-layouts/posts/home/categories";
+@import "4-layouts/posts/home/pages";
+@import "4-layouts/header/nav/navigation";
+/* purgecss end ignore */
+
+// Components

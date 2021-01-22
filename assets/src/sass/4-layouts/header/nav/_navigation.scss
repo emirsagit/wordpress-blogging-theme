@@ -1,0 +1,38 @@
+/* stylelint-disable */
+/* Nav item */
+.nav-item:hover .dropdown-menu:not(.show) {
+  display: block;
+}
+
+/* stylelint-enable */
+.bg-navbar {
+  background: $navbar-gradient; /*whichever you want*/
+}
+
+.nav-shadow {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+.nav-title {
+  font-weight: 900;
+  font-size: 36px;
+  letter-spacing: 2px;
+}
+
+.nav-element {
+  letter-spacing: 1px;
+}
+
+.nav-link {
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .nav-title {
+    font-weight: 900;
+    font-size: 28px;
+    letter-spacing: 2px;
+  }
+}

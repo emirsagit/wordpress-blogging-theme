@@ -1,0 +1,42 @@
+.shadow {
+  border: 2px solid #fff;
+  box-shadow: 10px 10px 5px #ccc;
+  -moz-box-shadow: 10px 10px 5px #ccc;
+  -webkit-box-shadow: 10px 10px 5px #ccc;
+  -khtml-box-shadow: 10px 10px 5px #ccc;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px !important;
+}
+
+
+.opacity-eight-percent :hover {
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -ms-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.category-title-bg {
+    background: white;
+    position: absolute;
+    z-index: 10;
+    top: 0;
+}
+
+p {
+  line-height: 2rem;
+}
+
+
+.cat-item {
+  margin-bottom: 10px;
+  list-style-type: none;
+  text-align: center;
+}
+
+.widget-title {
+  text-align: center;
+}
