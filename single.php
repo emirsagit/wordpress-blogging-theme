@@ -21,7 +21,7 @@ get_header();
 				</div>
 				<div class="d-flex justify-content-between text-muted">
 					<p>Yazar: <?php echo get_the_author(); ?> </p>
-					<p><?php  aquila_posted_on(); ?></p>
+					<p><?php aquila_posted_on(); ?></p>
 				</div>
 				<?php if (have_posts()) : ?><?php while (have_posts()) : the_post(); ?>
 
@@ -35,7 +35,7 @@ get_header();
 
 				<?php }  ?>
 
-				<div class="sing-cont mt-4">
+				<div class="sing-cont my-4">
 
 					<div class="sing-spacer">
 
@@ -71,6 +71,26 @@ get_header();
 		</div>
 	</div>
 </main>
-
 <?php
 get_footer();
+?>
+
+<script>
+	let questions = document.getElementsByTagName("h4")
+
+	for (question of questions) {
+		console.log(question)
+		let beforeAdded = question.innerHTML;
+		question.innerHTML += " (Yanıt için tıklayınız)";
+		question.onclick = function(question) {
+			//answer = question.target.children[0]
+			if (question.target.children[0].style.display && question.target.children[0].style.display != 'none') {
+				question.target.innerHTML += " (Yanıt için tıklayınız)";
+				question.target.children[0].style.display = 'none'
+			} else {
+				question.target.innerHTML = beforeAdded;
+				question.target.children[0].style.display = 'block'
+			}
+		}
+	}
+</script>

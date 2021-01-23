@@ -35,7 +35,7 @@ get_header();
 
 				<?php }  ?>
 
-				<div class="sing-cont mt-4">
+				<div class="sing-cont mt-4 my-4">
 
 					<div class="sing-spacer">
 
@@ -73,3 +73,25 @@ get_header();
 
 <?php
 get_footer();
+?>
+
+
+<script>
+	let questions = document.getElementsByTagName("h5")
+
+	for (question of questions) {
+		console.log(question)
+		let beforeAdded = question.innerHTML;
+		question.innerHTML += " (Yanıt için tıklayınız)";
+		question.onclick = function(question) {
+			//answer = question.target.children[0]
+			if (question.target.children[0].style.display && question.target.children[0].style.display != 'none') {
+				question.target.innerHTML += " (Yanıt için tıklayınız)";
+				question.target.children[0].style.display = 'none'
+			} else {
+				question.target.innerHTML = beforeAdded;
+				question.target.children[0].style.display = 'block'
+			}
+		}
+	}
+</script>

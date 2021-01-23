@@ -44,3 +44,21 @@ p {
 a:hover {
   text-decoration: none;
 }
+
+h5 {
+  display:block;
+  background-color: #BBDEFB;
+  border-radius: 8px;
+  padding: 10px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+h5 sub {
+  display: none;
+  text-align: left;
+  padding: 20px 0px;
+  color: #17A2B8;
+  font-weight: 800;
+  font-size: 20px;
+}
